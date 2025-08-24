@@ -1,0 +1,20 @@
+{
+  "JFK": {
+    "bucket_minutes": 5,
+    "window_plus_minus_min": 15,
+    "default_capacity_mode": "Visual_DeparturePriority",
+    "capacity_modes": {
+      "Visual_ArrivalPriority": { "arrivals": 87, "departures": 90 },
+      "Visual_DeparturePriority": { "arrivals": 84, "departures": 93 },
+      "Marginal": { "arrivals": 86, "departures": 85 },
+      "Instrument": { "arrivals": 84, "departures": 74 }
+    },
+    "mode_usage_percent": {
+      "Visual_ArrivalPriority": 6,
+      "Visual_DeparturePriority": 11,
+      "Marginal": 2,
+      "Instrument": 3
+    },
+    "notes": "Capacity varies with weather and operating mode."
+  }
+}

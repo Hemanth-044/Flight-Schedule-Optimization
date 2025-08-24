@@ -1,0 +1,19 @@
+# Ignore Python virtual environments
+venv/
+env/
+
+# Ignore data files (CSV, Parquet etc.)
+data/
+*.csv
+*.parquet
+
+# Ignore other common python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
