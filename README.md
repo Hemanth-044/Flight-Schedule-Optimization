@@ -44,10 +44,10 @@ flight_sched_realdata_only/
 ## Setup & Installation
 
 1. Clone the repository:
-
+```
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
-
+```
 
 
 2. Create a virtual environment and install dependencies:
@@ -68,65 +68,53 @@ Don’t commit raw data or virtual environments to the repo; keep datasets local
 ## Usage
 
 ### Data preparation
-
+```
 python -m scripts.0_prepare_bts --input_csv data/raw_bts_week_clean.csv --output_csv data/normalized_week.csv
+```
 
-text
 
 ### Train delay prediction model
-
+```
 python -m scripts.1_train_model --input_csv data/normalized_week.csv
-
-text
+```
 
 ### Optimize flight schedule
-
+```
 Specify airport and capacity mode as needed:
 
 python -m scripts.2_optimize_schedule --input_csv data/normalized_week.csv --airport_config configs/airports.json --airport_profile JFK --capacity_mode Visual_DeparturePriority --output_csv data/optimized_schedule.csv
+```
 
-text
 
 ### Launch the dashboard
-
+```
 streamlit run app.py
 
-text
+```
 
 Upload the normalized and optimized CSV files in the Streamlit app sidebar and explore interactive visualizations and NLP queries.
 
 ---
 
 ## Key Results
-
+```
 - Reduction of peak departure congestion within configured capacity modes.
 - Improved distribution of departure delays across daily operational windows.
 - Interactive insights on delay reasons and cancellations support operational decision making.
 - Adaptability to Indian airports like Mumbai and Delhi through configuration updates.
-
+```
 ---
 
 ## Model Performance
-
+```
 We trained a machine learning model to predict departure delays using extensive historical flight data. The model achieved a test mean absolute error (MAE) of **6.80 minutes**, demonstrating accurate delay prediction supporting effective scheduling optimization. These predictions enable prioritization of flights with higher delay risk, improving overall schedule robustness.
-
+```
 ---
 
 ## Contribution Guidelines
-
+```
 Contributions, issues, and feature requests are welcome! Feel free to submit pull requests or open issues.
-
----
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-## Contact
-
-For questions or collaborations, reach out at: your.email@example.com
+```
 
 ---
 
